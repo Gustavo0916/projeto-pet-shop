@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min-2.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS media query em um elemento de link -->
+    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@11.0.3/css/boxicons.min.css' rel='stylesheet'>
+    <title>Pet Shop</title>
+</head>
+<body>
+    
+    <div id="container_principal"> <!-- INICIO CONTAINER-PRINCIPAL -->
+
+        <section id="cabecalho"> <!-- INICIO CABECALHO -->
+            <div class="caixa_logo"> <!-- INICIO CAIXA LOGO -->
+                <div class="caixa_logotipo">
+                    <img src="imagens/imagem-logo.png" alt="">
+                    <div class="caixa_descricao_logo">
+                        <h1> Pet Shop </h1>
+                        <h4> Serviços para cães e gatos </h4>
+                    </div>
+                </div>
+                <div class="caixa_contato_cabecalho">
+                    <h4> Nosso contato </h4>
+                    <div class="icon_contato">
+                        <svg width="20" height="20" fill="none" stroke="#f8a94a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m3.51 2 3.64.132A1.961 1.961 0 0 1 8.89 3.37l1.077 2.662c.25.62.183 1.326-.18 1.884l-1.379 2.121c.817 1.173 3.037 3.919 5.388 5.526l1.752-1.079a1.917 1.917 0 0 1 1.483-.226l3.485.894c.927.237 1.551 1.126 1.478 2.103l-.224 2.983c-.078 1.047-.935 1.869-1.952 1.75C6.392 20.429-1.481 2 3.511 2Z"></path>
+                        </svg>
+                    </div> 
+                    <h4> (800) 555-43-21 </h4>
+                </div>
+            </div> <!-- FIM CAIXA LOGO -->
+
+            <nav>
+                <ul>
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#"> Sobre Nós </a> </li>
+                    <li> <a href="#"> Página </a> </li>
+                    <li> <a href="#"> Serviços </a> </li>
+                    <li> <a href="#"> Compra </a> </li>
+                    <li> <a href="#"> Blog </a> </li>
+                    <li> <a href="#"> Contato </a> </li>
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+                    <div class="icon_pesquisa">
+                        <svg width="18" height="18" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m17 17 5 5m-2.5-11.25a8.75 8.75 0 1 1-17.5 0 8.75 8.75 0 0 1 17.5 0Z"></path>
+                        </svg>
+                    </div> 
+                </ul>
+            </nav>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile"> <!-- INICIO MENU MOBILE -->
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav class="navMobile">
+                    <ul>
+                        <li> <a href="#"> Home </a> </li>
+                        <li> <a href="#"> Sobre Nós </a> </li>
+                        <li> <a href="#"> Página </a> </li>
+                        <li> <a href="#"> Serviços </a> </li>
+                        <li> <a href="#"> Compra </a> </li>
+                        <li> <a href="#"> Blog </a> </li>
+                        <li> <a href="#"> Contato </a> </li>
+                        <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+                    </ul>
+                </nav>
+            </div> <!-- FIM MENU MOBILE -->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </section> <!-- FIM CABECALHO -->
+
+        <!---->
+
+        <section id="home_imagem"> <!-- INICIO HOME IMAGEM -->
+
+            <div class="caixa_descricao_home">
+                <div class="caixa_titulo_home">
+                    <h1> Nós estilizamos seu animal de estimação </h1>
+                </div>
+                <div class="subTitulo_home">
+                    <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas. </h4>
+                </div>
+                <div class="caixa_btn_home">
+                    <button type="button"> Marque uma consulta </button>
+                </div>
+            </div>
+            
+        </section> <!-- FIM HOME IMAGEM -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="container_historia"> <!-- INICIO CONTAINER HISTORIA -->
+            <div class="caixa_pricipal_historia"> <!-- INICIO CAIXA PRINCIPAL HISTORIA -->
+                <div class="">
+                    <div class="caixa_left_historia"> <!-- INICIO CAIXA LEFT HISTORIA -->
+                        <div class="titulo_historia">
+                            <h1> Nossa História </h1>
+                        </div>
+                        <div class="descricao_historia">
+                            <i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </i>
+                            <i> Maecenas congue consequat posuere. Phasellus fermentum id </i>
+                            <i> justo in posuere. Praesent vitae sem tortor. Praesent diam </i>
+                            <i> est, aliquam a lorem ac, dignissim sollicitudin quam. Quisque </i>  
+                            <i> non erat pharetra mi rutrum aliquam. Quisque in enim non nibh </i>
+                            <i> consequat commodo. Mauris eu sapien in tortor feugiat pretium. </i>
+                            <i> Nam vestibulum feugiat libero. </i>
+                        </div>
+                        <div class="caixa_btn_historia">
+                            <button type="button"> Solicite uma ligação </button>
+                            <div class="caixa_contato_historia">
+                                <h3> <span>ou ligue para nós</span> (800) 122-43-12 </h3>
+                            </div>
+                        </div>
+                    </div> <!-- FIM CAIXA LEFT HISTORIA -->
+                </div>  
+                <!---->
+                <div class="caixa_right_historia">
+                    <img src="imagens/imagem-historia.png" alt="">
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL HISTORIA -->
+        </section> <!-- FIM CONTAINER HISTORIA -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="container_servicos_tratamento"> <!-- INICIO CONTAINER SERVIÇOS TRATAMENTO -->
+            <div class="caixa_principal_servicos_tratamento"> <!-- INICIO CAIXA PRINCIPAL SERVIÇOS TRATAMENTO -->
+                <div class="caixa_left_servicos_tratamento">
+                    <div class="caixa_img_icone">
+                        <img src="imagens/img-icone-1.png" alt="">
+                    </div>
+                    <div class="descricao_servico_tratamento">
+                        <div class="titulo_servico_tratamento">
+                            <h3> Melhores tratadores </h3>
+                        </div>
+                        <div class="descricao">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Illum, eos excepturi nostrum dicta. </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_center_servicos_tratamento">
+                    <div class="caixa_img_icone-2">
+                        <img src="imagens/img-icone-2.png" alt="">
+                    </div>
+                    <div class="descricao_servico_tratamento">
+                        <div class="titulo_servico_tratamento">
+                            <h3> Serviço V.I.P </h3>
+                        </div>
+                        <div class="descricao">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Illum, eos excepturi nostrum dicta. </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_right_servicos_tratamento">
+                    <div class="caixa_img_icone-2">
+                        <img src="imagens/img-icone-3.png" alt="">
+                    </div>
+                    <div class="descricao_servico_tratamento">
+                        <div class="titulo_servico_tratamento-2">
+                            <h3> Amamos cada animal de estimação </h3>
+                        </div>
+                        <div class="descricao">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Illum, eos excepturi nostrum dicta. </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL SERVIÇOS TRATAMENTO -->
+        </section> <!-- FIM CONTAINER SERVIÇOS TRATAMENTO -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="contaienr_servicos"> <!-- INICIO CONTAINER SERVIÇOS -->
+            <div class="caixa_titulo_servico">
+                <h1> Nossos Serviços </h1>
+                <div class="caixa_linha">
+                    <div class="linha"> <!-- LINHA NO CSS --> </div>
+                    <div>
+                        <img src="imagens/img-icone-3.png" height="30px" alt="">
+                    </div>
+                    <div class="linha"> <!-- LINHA NO CSS --> </div>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="caixa_principal_servico">
+                <div class="caixa_left_servico">
+                    <div class="caixa_interno">
+                        <div class="titulo_item_servico">
+                            <h3> Preparação completa </h3>
+                            <img src="imagens/img-icone-1.png" alt="">
+                        </div>
+                        <div class="descricao_servico_left">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis nam dolorum eius quis. Laborum eaque esse nam illo animi error voluptates. </p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="caixa_interno">
+                        <div class="titulo_item_servico-2">
+                            <h3> Banho&Seco </h3>
+                            <img src="imagens/img-icone-3.png" alt="">
+                        </div>
+                        <div class="descricao_servico_left">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis nam dolorum eius quis. Laborum eaque esse nam illo animi error voluptates. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="caixa_center_servico">
+                    <div class="hidden">
+                        <img src="imagens/imagem-servicos.png" alt="">
+                    </div>
+                </div>
+
+                <!---->
+                
+                <div class="caixa_right_servico">
+                    <div class="caixa_interno">
+                        <div class="titulo_item_servico">
+                            <img src="imagens/img-icone-4.png" alt="">
+                            <h3> Estilo </h3>
+                            
+                        </div>
+                        <div class="descricao_servico_left">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis nam dolorum eius quis. Laborum eaque esse nam illo animi error voluptates. </p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="caixa_interno">
+                        <div class="titulo_item_servico-3">
+                            <img src="imagens/img-icone-5.png" alt="">
+                            <h3> Banho médico </h3>
+                            
+                        </div>
+                        <div class="descricao_servico_left">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis nam dolorum eius quis. Laborum eaque esse nam illo animi error voluptates. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- FIM CONTAINER SERVIÇOS -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="container_galeria_fotos"> <!-- INICIO CONTAINER GALERIA FOTOS -->
+            <div class="caixa_left_galeria">
+                <img src="imagens/img-cachorro-1.jpg" alt="">
+            </div>
+            <!---->
+            <div class="caixa_center_galeria">
+                <div class="caixa_center_1">
+                    <img src="imagens/img-cachorro-2.jpg" alt="">
+                </div>
+                <div class="caixa_center_2">
+                    <div class="caixa_secundaria_center">
+                        <img src="imagens/img-cachorro-3.jpg" alt="">
+                    </div>
+                    <!---->
+                    <div class="caixa_secundaria_center">
+                        <img src="imagens/img-cachorro-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="caixa_right_galeria">
+                <div class="caixa_right_1">
+                    <div class="caixa_secundaria_right">
+                        <img src="imagens/img-cachorro-5.jpg" alt="">
+                    </div>
+                    <!---->
+                    <div class="caixa_secundaria_right">
+                        <img src="imagens/img-cachorro-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="caixa_right_2">
+                    <img src="imagens/img-cachorro-7.jpg" alt="">
+                </div>
+            </div>
+        </section> <!-- FIM CONTAINER GALERIA FOTOS -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="container_pacote_servicos"> <!-- INICIO CONTAINER PACOTE SERVIÇOS -->
+            <div class="caixa_titulo_pacote">
+                <h1> Nossos Pacotes </h1>
+                <div class="caixa_linha">
+                    <div class="linha"> <!-- LINHA NO CSS --> </div>
+                    <div>
+                        <img src="imagens/img-icone-3.png" height="30px" alt="">
+                    </div>
+                    <div class="linha"> <!-- LINHA NO CSS --> </div>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="caixa_principal_servicos_pacote"> <!-- INICIO CAIXA PRINCIPAL SERVIÇOS PACOTES -->
+                
+                <div class=""> 
+                    <div class="caixa_item_pacote">
+                        <div class="caixa_img_cachorro">
+                            <div class="caixa_img_cachorro_servico">
+                                <img src="imagens/img-servico-pacote-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="caixa_titulo_servico_pacote">
+                            <h1> Banho de Luxo </h1>
+                        </div>
+                        <div class="descricao_servico_pacote">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam magni, impedit odio voluptates recusandae sint veritatis corrupti aliquam tenetur reiciendis ab iure, ducimus ea modi magnam eos blanditiis? Optio. </p>
+                        </div>
+                        <div class="caixa_btn_servico_pacote">
+                            <button type="button"> Pergunte agora </button>
+                        </div>
+                    </div>
+                </div> 
+
+                <!---->
+
+                <div class="">
+                    <div class="caixa_item_pacote">
+                        <div class="caixa_img_cachorro">
+                            <div class="caixa_img_cachorro_servico">
+                                <img src="imagens/img-servico-pacote-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="caixa_titulo_servico_pacote">
+                            <h1> Banho Completo </h1>
+                        </div>
+                        <div class="descricao_servico_pacote">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam magni, impedit odio voluptates recusandae sint veritatis corrupti aliquam tenetur reiciendis ab iure, ducimus ea modi magnam eos blanditiis? Optio. </p>
+                        </div>
+                        <div class="caixa_btn_servico_pacote">
+                            <button type="button"> Pergunte agora </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="">
+                    <div class="caixa_item_pacote">
+                        <div class="caixa_img_cachorro">
+                            <div class="caixa_img_cachorro_servico">
+                                <img src="imagens/img-servico-pacote-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="caixa_titulo_servico_pacote">
+                            <h1> Banho e Arrumação </h1>
+                        </div>
+                        <div class="descricao_servico_pacote">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam magni, impedit odio voluptates recusandae sint veritatis corrupti aliquam tenetur reiciendis ab iure, ducimus ea modi magnam eos blanditiis? Optio. </p>
+                        </div>
+                        <div class="caixa_btn_servico_pacote">
+                            <button type="button"> Pergunte agora </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- FIM CAIXA PRINCIPAL SERVIÇOS PACOTES -->
+
+        </section> <!-- FIM CONTAINER PACOTE SERVIÇOS -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section class="container_slide"> <!-- INICIO CONTAINER SLIDE -->
+            <div class="testimonial mySwiper"> <!-- INICIO TESTIMONIAL MYSWIPER -->
+                <div class="testi_content swiper-wrapper"> <!-- INICIO TESTI CONTENT SWIPER WRAPPER -->
+                    <div class="slide swiper-slide">
+                        <img src="imagens/img-cachorro-3.jpg" alt="" class="image">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, consectetur laborum. Nisi tempore quis unde 
+                            velit vitae libero eum. Perferendis repellendus culpa ratione 
+                            laboriosam id qui, porro modi corporis repellat! 
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="details">
+                            <span class="name"> Ozzy </span>
+                            <span class="race"> Husky Siberiano </span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="slide swiper-slide">
+                        <img src="imagens/img-cachorro-4.jpg" alt="" class="image">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, consectetur laborum. Nisi tempore quis unde 
+                            velit vitae libero eum. Perferendis repellendus culpa ratione 
+                            laboriosam id qui, porro modi corporis repellat! 
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="details">
+                            <span class="name"> Brutus </span>
+                            <span class="race"> Pastor Alemão </span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="slide swiper-slide">
+                        <img src="imagens/img-cachorro-2.jpg" alt="" class="image">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, consectetur laborum. Nisi tempore quis unde 
+                            velit vitae libero eum. Perferendis repellendus culpa ratione 
+                            laboriosam id qui, porro modi corporis repellat! 
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="details">
+                            <span class="name"> Luna </span>
+                            <span class="race"> Yorkshire </span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="slide swiper-slide">
+                        <img src="imagens/img-cachorro-7.jpg" alt="" class="image">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, consectetur laborum. Nisi tempore quis unde 
+                            velit vitae libero eum. Perferendis repellendus culpa ratione 
+                            laboriosam id qui, porro modi corporis repellat! 
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="details">
+                            <span class="name"> Bidu </span>
+                            <span class="race"> Beagle </span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="slide swiper-slide">
+                        <img src="imagens/img-cachorro-5.jpg" alt="" class="image">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, consectetur laborum. Nisi tempore quis unde 
+                            velit vitae libero eum. Perferendis repellendus culpa ratione 
+                            laboriosam id qui, porro modi corporis repellat! 
+                        </p>
+
+                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                        <div class="details">
+                            <span class="name"> Cloe </span>
+                            <span class="race"> Shih-tzu </span>
+                        </div>
+                    </div>
+                </div> <!-- FIM TESTI CONTENT SWIPER WRAPPER -->
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
+            </div> <!-- FIM TESTIMONIAL MYSWIPER -->
+        </section> <!-- FIM CONTAINER SLIDE -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="container_integrantes"> <!-- INICIO CONTAINER INTEGRANTES -->
+            <div class="caixa_titulo_integrante">
+                <h1> Nosso Time </h1>
+                <div class="caixa_linha">
+                    <div class="linha"> <!-- LINHA NO CSS --> </div>
+                    <div>
+                        <img src="imagens/img-icone-3.png" height="30px" alt="">
+                    </div>
+                    <div class="linha"> <!-- LINHA NO CSS --> </div>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="caixa_principal_integrante"> <!-- INICIO CAIXA PRINCIPAL INTEGRANTE -->
+                <div class="caixa_item_integrante">
+                    <div class="caixa_img_integrante">
+                        <img src="imagens/img-tratador-1.jpg" alt="">
+                    </div>
+                    <div class="caixa_nome_tratador">
+                        <h2> Tratadora - Anna Martins </h2>
+                    </div>
+                    <div class="descricao_integrante">
+                        <i> Lorem ipsum dolor sit amet.
+                        </i>
+                    </div>
+                    <div class="caixa_btn_integrante">
+                        <button type="button"> Mais Tratadores </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_integrante">
+                    <div class="caixa_img_integrante">
+                        <img src="imagens/img-tratador-2.jpg" alt="">
+                    </div>
+                    <div class="caixa_nome_tratador">
+                        <h2> Tratadora - Isabela </h2>
+                    </div>
+                    <div class="descricao_integrante">
+                        <i> Lorem ipsum dolor sit amet.
+                        </i>
+                    </div>
+                    <div class="caixa_btn_integrante">
+                        <button type="button"> Mais Tratadores </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_integrante">
+                    <div class="caixa_img_integrante">
+                        <img src="imagens/img-tratador-3.jpg" alt="">
+                    </div>
+                    <div class="caixa_nome_tratador">
+                        <h2> Tratadora - Luiza Souza </h2>
+                    </div>
+                    <div class="descricao_integrante">
+                        <i> Lorem ipsum dolor sit amet.
+                        </i>
+                    </div>
+                    <div class="caixa_btn_integrante">
+                        <button type="button"> Mais Tratadores </button>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL INTEGRANTE -->
+
+        </section> <!-- FIM CONTAINER INTEGRANTES -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <div class="caixa_titulo_loja">
+            <h1> Nossa Loja </h1>
+            <div class="caixa_linha">
+                <div class="linha"> <!-- LINHA NO CSS --> </div>
+                <div>
+                    <img src="imagens/img-icone-3.png" height="30px" alt="">
+                </div>
+                <div class="linha"> <!-- LINHA NO CSS --> </div>
+            </div>
+        </div>
+
+        <section id="container_loja"> <!-- INICIO CONTAINER LOJA -->
+            <div class="caixa_principal_loja"> <!-- INICIO CAIXA PRINCIPAL LOJA -->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-1.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Brinquedo mordedor corda. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 24,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-2.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Bolinha para gato e cachorro. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 7,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-3.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Pote ração. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 39,99 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-4.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Luva para remoção de pelos. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 19,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL LOJA -->
+        </section> <!-- FIM CONTAINER LOJA -->
+
+        <!---->
+
+        <section id="container_loja"> <!-- INICIO CONTAINER LOJA -->
+            <div class="caixa_principal_loja"> <!-- INICIO CAIXA PRINCIPAL LOJA -->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-5.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Brinquedo osso de vinil. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 12,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-6.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Brinquedo Chalesco Para Gatos. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 20,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-7.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Arranhador para gatos. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 30,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+                <!---->
+                <div class="caixa_item_produto">
+                    <div class="caixa_img_produto">
+                        <img src="imagens/produto-8.png" alt="">
+                    </div>
+                    <div class="caixa_descricao_produto">
+                        <p> Comedouro. </p>
+                    </div>
+                    <div class="caixa_preco">
+                        <h2> R$ 15,00 </h2>
+                    </div>
+                    <div class="caixa_btn_preco">
+                        <button type="button"> Comprar </button>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL LOJA -->
+        </section> <!-- FIM CONTAINER LOJA -->
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <footer>
+            <div class="caixa_footer_left">
+                <div class="caixa_logo_footer">
+                    <img src="imagens/imagem-logo.png" alt="">
+                </div>
+                <div class="descricao_logo_footer">
+                    <h1> Pet Shop </h1>
+                    <h4> Serviços para cães e gatos </h4>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="caixa_footer_center">
+                <div class="titulo_footer">
+                    <h3> Contato </h3>
+                </div>
+                <div class="email">
+                    <svg width="24" height="24" fill="#f4ab4c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.29 4.908a54.397 54.397 0 0 1 9.42 0l1.511.13a2.888 2.888 0 0 1 2.313 1.546.235.235 0 0 1-.091.307l-6.266 3.88a4.25 4.25 0 0 1-4.4.045L3.47 7.088a.236.236 0 0 1-.103-.293A2.889 2.889 0 0 1 5.78 5.039l1.51-.131Z"></path>
+                        <path d="M3.362 8.767a.248.248 0 0 0-.373.187 30.351 30.351 0 0 0 .184 7.56A2.888 2.888 0 0 0 5.78 18.96l1.51.131c3.135.273 6.287.273 9.422 0l1.51-.13a2.888 2.888 0 0 0 2.606-2.449 30.35 30.35 0 0 0 .161-7.779.247.247 0 0 0-.377-.182l-5.645 3.494a5.75 5.75 0 0 1-5.951.061l-5.653-3.34Z"></path>
+                    </svg>
+                    <p> Pet_Shop@Gmail.com </p>
+                </div>
+                <div class="telefone">
+                    <svg width="24" height="24" fill="#f4ab4c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9.86a18.466 18.466 0 0 0 9.566 9.292l.68.303a3.5 3.5 0 0 0 4.33-1.247l.889-1.324a1 1 0 0 0-.203-1.335l-3.012-2.43a1 1 0 0 0-1.43.183l-.933 1.257a12.14 12.14 0 0 1-5.51-5.511l1.256-.932a1 1 0 0 0 .183-1.431l-2.43-3.012a1 1 0 0 0-1.335-.203l-1.333.894a3.5 3.5 0 0 0-1.237 4.355L5 9.86v.002Z"></path>
+                    </svg>
+                    <p> (800) 555-43-21 </p>
+                </div>
+                <div class="localizacao">
+                    <svg width="24" height="24" fill="#f4ab4c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.75 10a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Z"></path>
+                        <path fill-rule="evenodd" d="M3.774 8.877a8.038 8.038 0 0 1 8.01-7.377h.432a8.038 8.038 0 0 1 8.01 7.377 8.693 8.693 0 0 1-1.933 6.217L13.5 20.956a1.937 1.937 0 0 1-3 0l-4.792-5.862a8.693 8.693 0 0 1-1.934-6.217ZM12 5.25a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5Z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p> Av. Lorem ipsum dolor sit - 999 </p>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="caixa_footer_right">
+                <div class="titulo_footer">
+                    <h3> Sobre nós </h3>
+                </div>
+                <div class="descricao_footer">
+                    <p> Lorem ipsum dolor sit amet consectetur. </p>
+                </div>
+                <div class="descricao_footer">
+                    <p> mollitia minima molestias et. </p>
+                </div>
+                <div class="descricao_footer">
+                    <p> Voluptas officiis placeat ex sunt id. </p>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="caixa_inscreverSe">
+                <div class="titulo_footer">
+                    <h3> inscreva-se </h3>
+                </div>
+                <div class="caixa_input">
+                    <input type="text" placeholder="Insira seu e-mail">
+                    <div class="btn_enviar">
+                        <button type="button"> Enviar </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!---->
+
+        <!-------------->
+
+        <!---->
+
+        <section id="descricao_desenvolvedor">
+            <div class="nome_desenvolvedor">
+                <p> <span>Criado por:</span> Gustavo Jankevicius de Amorim </p>
+            </div>
+            <div class="email_desenvolvedor">
+                <svg width="24" height="24" fill="#f4ab4c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.29 4.908a54.397 54.397 0 0 1 9.42 0l1.511.13a2.888 2.888 0 0 1 2.313 1.546.235.235 0 0 1-.091.307l-6.266 3.88a4.25 4.25 0 0 1-4.4.045L3.47 7.088a.236.236 0 0 1-.103-.293A2.889 2.889 0 0 1 5.78 5.039l1.51-.131Z"></path>
+                    <path d="M3.362 8.767a.248.248 0 0 0-.373.187 30.351 30.351 0 0 0 .184 7.56A2.888 2.888 0 0 0 5.78 18.96l1.51.131c3.135.273 6.287.273 9.422 0l1.51-.13a2.888 2.888 0 0 0 2.606-2.449 30.35 30.35 0 0 0 .161-7.779.247.247 0 0 0-.377-.182l-5.645 3.494a5.75 5.75 0 0 1-5.951.061l-5.653-3.34Z"></path>
+                </svg>
+                <p> Gustavo.Jankevicius@gmail.com </p>
+            </div>
+            <div class="contato_desenvolvedor">
+                <svg width="24" height="24" fill="#f4ab4c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.14 21.412a.4.4 0 0 0 .487.493L7.234 20.7a10 10 0 0 0 4.76 1.207h.004c5.486 0 9.958-4.446 9.958-9.912a9.827 9.827 0 0 0-2.914-7.011 9.916 9.916 0 0 0-7.044-2.905c-5.486 0-9.958 4.446-9.958 9.911 0 1.74.458 3.447 1.33 4.954L2.14 21.41ZM8.842 7.25c.183.005.386.015.579.443.128.285.343.81.519 1.238.136.333.249.607.277.663.064.128.104.275.02.448l-.028.058c-.068.14-.116.24-.23.37a9.186 9.186 0 0 0-.143.17c-.085.104-.17.206-.242.278-.129.128-.262.266-.114.522.148.256.668 1.098 1.435 1.777a6.635 6.635 0 0 0 1.903 1.2c.07.03.127.055.17.076.257.128.41.108.558-.064.149-.173.643-.749.817-1.005.168-.256.34-.216.578-.128.238.089 1.504.71 1.761.837l.143.07c.179.085.3.144.352.23.064.109.064.621-.148 1.222-.218.6-1.267 1.176-1.742 1.22l-.135.016c-.436.053-.988.12-2.956-.655-2.426-.954-4.027-3.32-4.35-3.799l-.053-.076-.006-.008c-.147-.197-1.048-1.402-1.048-2.646s.586-1.81.854-2.092a7.15 7.15 0 0 0 .047-.05.95.95 0 0 1 .687-.32c.173 0 .347 0 .495.005Z" clip-rule="evenodd"></path>
+                </svg>
+                <p> (11) 97401-6595 </p>
+            </div>
+        </section>
+
+    </div> <!-- FIM CONTAINER-PRINCIPAL -->
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
